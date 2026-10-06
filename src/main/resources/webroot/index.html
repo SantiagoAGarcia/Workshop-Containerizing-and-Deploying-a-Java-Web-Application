@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Web Framework - Sequential HTTP Server</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-brand">
+                <img src="/images/logo.png" alt="Framework Logo" id="brandLogo">
+                <div class="header-title">
+                    <h1>Mini Web Framework</h1>
+                    <p>Lightweight Sequential HTTP Server in Java</p>
+                </div>
+            </div>
+            <div>
+                <span class="badge">Strictly Sequential (Single-Threaded)</span>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- Hello Service Card -->
+            <div class="card">
+                <h2>👋 Greeting Service</h2>
+                <p class="desc">Invokes <code>GET /hello?name=...</code> via asynchronous fetch.</p>
+                <form id="greetingForm">
+                    <div class="form-group">
+                        <label for="nameInput">Name:</label>
+                        <input type="text" id="nameInput" placeholder="e.g. Pedro" autocomplete="off">
+                    </div>
+                    <button type="submit" id="btnHello">Send Greeting</button>
+                </form>
+            </div>
+
+            <!-- Math PI Service Card -->
+            <div class="card">
+                <h2>🥧 Math PI Service</h2>
+                <p class="desc">Invokes <code>GET /pi</code> to retrieve server-side constant.</p>
+                <button type="button" id="btnPi" class="btn-secondary" style="margin-top: auto;">Fetch Math.PI</button>
+            </div>
+
+            <!-- Environment Service Card -->
+            <div class="card">
+                <h2>🌐 Cloud Environment</h2>
+                <p class="desc">Invokes <code>GET /env</code> to inspect active cloud configuration.</p>
+                <button type="button" id="btnEnv" class="btn-secondary" style="margin-top: auto;">Fetch /env</button>
+            </div>
+        </div>
+
+        <div class="console-card">
+            <div class="console-header">
+                <span class="console-title">Live Response Console</span>
+                <span class="status-tag" id="statusTag">Ready</span>
+            </div>
+            <pre id="resultBox">// Responses from the server will be rendered here...</pre>
+        </div>
+
+        <footer>
+            <p>Escuela Colombiana de Ingenier&iacute;a Julio Garavito &middot; Software Architecture Lab</p>
+        </footer>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

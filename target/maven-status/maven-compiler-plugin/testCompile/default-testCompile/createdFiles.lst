@@ -1,1 +1,7 @@
-co\edu\escuelaing\HelloRestControllerTest.class
+co\edu\escuelaing\webframework\RouterTest.class
+co\edu\escuelaing\webframework\ConcurrencyTest.class
+co\edu\escuelaing\webframework\GracefulShutdownTest.class
+co\edu\escuelaing\webframework\WebFrameworkIntegrationTest.class
+co\edu\escuelaing\webframework\StaticFileServiceTest.class
+co\edu\escuelaing\webframework\RequestTest.class
+co\edu\escuelaing\webframework\SaturationTest.class
